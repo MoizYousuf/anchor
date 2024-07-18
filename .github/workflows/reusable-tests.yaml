@@ -336,7 +336,7 @@ jobs:
   #     - run: cd tests/misc && chmod +x ci.sh && ./ci.sh
   #     - run: cd tests/misc && anchor test --skip-lint
 
-  # TODO: Re-enable after releasing `0.29.0`.
+  # TODO: Re-enable after releasing `0.30.2`.
   # test-anchor-init:
   #   needs: setup-anchor-cli
   #   name: Test Anchor Init

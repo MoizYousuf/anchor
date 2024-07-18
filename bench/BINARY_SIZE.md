@@ -24,7 +24,7 @@ Solana version: 1.17.0
 
 ---
 
-## [0.29.0]
+## [0.30.2]
 
 Solana version: 1.17.0
 

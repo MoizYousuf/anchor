@@ -7,14 +7,14 @@ Anchor keeps a [CHANGELOG](https://github.com/coral-xyz/anchor/blob/master/CHANG
 
 ---
 
-## [0.29.0]
+## [0.30.2]
 
 ### How to update
 
 1. Update `avm`:
 
    ```sh
-   cargo install --git https://github.com/coral-xyz/anchor --tag v0.29.0 avm --locked
+   cargo install --git https://github.com/coral-xyz/anchor --tag v0.30.2 avm --locked
    ```
 
 2. Update `anchor-cli`:
@@ -23,9 +23,9 @@ Anchor keeps a [CHANGELOG](https://github.com/coral-xyz/anchor/blob/master/CHANG
    avm install latest
    ```
 
-3. Update Anchor crate(s) to `0.29.0`. Optionally, run `cargo update` to update other dependencies to the latest compatible versions.
+3. Update Anchor crate(s) to `0.30.2`. Optionally, run `cargo update` to update other dependencies to the latest compatible versions.
 
-4. Update TS package(s) to `0.29.0`.
+4. Update TS package(s) to `0.30.2`.
 
 ### Solana `1.14` is no longer supported
 
@@ -46,7 +46,7 @@ solana-install init 1.17.0
 
 ```toml
 [toolchain]
-anchor_version = "0.29.0" # `anchor-cli` version to use
+anchor_version = "0.30.2" # `anchor-cli` version to use
 solana_version = "1.17.0" # Solana version to use
 ```
 
@@ -292,7 +292,7 @@ Generates the following IDL:
 
 ```diff
 [dependencies]
-anchor-spl = { version = "0.29.0", features = ["metadata"] }
+anchor-spl = { version = "0.30.2", features = ["metadata"] }
 - mpl-token-metadata = "1.13.1"
 ```
 
@@ -324,14 +324,14 @@ The previous image([projectserum/build](https://hub.docker.com/r/projectserum/bu
 To pull the latest image, run:
 
 ```sh
-docker pull backpackapp/build:v0.29.0
+docker pull backpackapp/build:v0.30.2
 ```
 
 **Note:** `anchor build --verifiable` now works with the latest image.
 
 ### Enhanced performance
 
-`0.29.0` performance is noticably improved in all areas, the biggest one being [binary size](https://github.com/coral-xyz/anchor/blob/master/bench/BINARY_SIZE.md#0290) which is reduced ~36% compared to `0.28.0`!
+`0.30.2` performance is noticably improved in all areas, the biggest one being [binary size](https://github.com/coral-xyz/anchor/blob/master/bench/BINARY_SIZE.md#0290) which is reduced ~36% compared to `0.28.0`!
 
 Similar benchmarks can be found for [compute units](https://github.com/coral-xyz/anchor/blob/master/bench/COMPUTE_UNITS.md#0290) and [stack memory](https://github.com/coral-xyz/anchor/blob/master/bench/STACK_MEMORY.md#0290).
 
